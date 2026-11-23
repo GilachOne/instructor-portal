@@ -1,0 +1,21 @@
+{
+  "id": "/",
+  "name": "Автошкола — отчёты об экзаменах",
+  "short_name": "Автошкола",
+  "description": "Отчёты инструкторов автошколы о сдаче экзаменов в ГИБДД",
+  "start_url": "/?source=app",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#b50d12",
+  "theme_color": "#b50d12",
+  "lang": "ru",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Сдать отчёт", "short_name": "Отчёт", "url": "/#report", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

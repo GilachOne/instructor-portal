@@ -1,0 +1,27 @@
+AddDefaultCharset utf-8
+DirectoryIndex index.php
+Options -Indexes
+
+RewriteEngine On
+# проверка Let's Encrypt — без редиректов
+RewriteRule ^.well-known/acme-challenge/ - [L]
+# всё через https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# app.html отдаётся только через index.php
+RewriteRule ^app\.html$ / [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "same-origin"
+  Header always set X-Frame-Options "DENY"
+  <FilesMatch "\.(js|css|png|svg|json)$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+  <Files "sw.js">
+    Header set Cache-Control "no-cache"
+  </Files>
+</IfModule>
