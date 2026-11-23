@@ -4,6 +4,23 @@
 
 Проект в боевой эксплуатации, им пользуются больше 100 сотрудников. Это публичная копия: название школы, домены, телефоны и ключи убраны или заменены на примеры.
 
+## Скриншоты
+
+Экраны на вымышленных данных.
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/1-login.png" width="220" alt="Вход"><br>Вход по номеру</td>
+    <td align="center"><img src="docs/screenshots/2-home.png" width="220" alt="Главный экран"><br>Главный экран</td>
+    <td align="center"><img src="docs/screenshots/3-exam-report.png" width="220" alt="Отчёт об экзамене"><br>Отчёт об экзамене</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/4-photo-report.png" width="220" alt="Фотоотчёт"><br>Фотоотчёт по схеме</td>
+    <td align="center"><img src="docs/screenshots/5-my-reports.png" width="220" alt="Мои отчёты"><br>Мои отчёты и вердикт нейросети</td>
+    <td></td>
+  </tr>
+</table>
+
 ## Что умеет
 
 **Для инструктора**
